@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],e=>{"use strict";return e.extend("projectc.controller.Main",{onInit(){},clickMyButton(){let e=this.getView();let t=e.byId("myImage1");let i=e.byId("myImage2");let l=t.getVisible();t.setVisible(!l);i.setVisible(l)}})});
+//# sourceMappingURL=Main.controller.js.map

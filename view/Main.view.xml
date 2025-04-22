@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="projectc.controller.Main">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <Image src="https://github.com/ashuksu/runes/blob/main/src/uploads/banner-2.jpg?raw=true" width="140px" height="140px" id="myImage1" alt="my Image 1"/>
+        <Image src="https://github.com/ashuksu/runes/blob/main/src/uploads/banner-1.jpg?raw=true" width="140px" height="140px" id="myImage2" alt="my Image 2" visible="false"/>
+        <Button xmlns="sap.m" text="Button" id="myButton" press="clickMyButton"/>
+    </content>
+    </Page>
+</mvc:View>
