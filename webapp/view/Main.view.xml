@@ -1,9 +1,25 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="projectc.controller.Main">
     <Page id="page" title="{i18n>title}">
     <content>
-        <Image src="https://github.com/ashuksu/runes/blob/main/src/uploads/banner-2.jpg?raw=true" width="140px" height="140px" id="myImage1" alt="my Image 1"/>
-        <Image src="https://github.com/ashuksu/runes/blob/main/src/uploads/banner-1.jpg?raw=true" width="140px" height="140px" id="myImage2" alt="my Image 2" visible="false"/>
-        <Button xmlns="sap.m" text="Button" id="myButton" press="clickMyButton"/>
+        <FlexBox
+            class="my-box__block"
+            direction="Row"
+            alignItems="Center"
+            gap="20px">
+            <VBox
+                class="my-box__buttons">
+                <Button class="my-button" text="Button" id="myButton" press="clickMyButton"/>
+                <ToggleButton class="my-toggle-button" text="Toggle Button" id="myToggleButton" press="toggleMyButton" activeIcon="sap-icon://accept"/>
+            </VBox>
+            <HBox
+                class="my-box__images"
+                gap="20px">
+                <Image src="https://github.com/ashuksu/runes/blob/main/src/uploads/banner-2.jpg?raw=true" 
+                    class="my-image" width="140px" height="140px" id="myImage1" alt="my Image 1"/>
+                <Image src="https://github.com/ashuksu/runes/blob/main/src/uploads/banner-1.jpg?raw=true" 
+                    class="my-image" width="140px" height="140px" id="myImage2" alt="my Image 2" visible="false"/>
+            </HBox>
+        </FlexBox>
     </content>
     </Page>
 </mvc:View>
